@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 960px;
+	height: 100vh;
+	margin: 20px auto;
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+	width: 200px;
+	height: 150px;
+	background: #F7F7F7;
+	border: 1px solid #ccc; 
+	margin: 20px 0;
+}
+
+.box-1 {
+	position: static;
+	/*top: 50px; It shouldn't work! */
+}
+
+.box-2 {
+	position: relative;
+	top: 10px;
+	left: 50px;
+	bottom: 50px;
+}
+
+.box-3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.box-4 {
+	position: fixed;
+	/*text-align: center;*/
+}
+
+.box-4 p {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+}
